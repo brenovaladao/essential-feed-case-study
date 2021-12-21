@@ -96,7 +96,7 @@ Then the app should display an error message
 
 ## Architecture
 
-![Feed Loading Feature](feed_architecture.png)
+![Feed Loading Feature](architecture.png)
 
 ## Model Specs
 
