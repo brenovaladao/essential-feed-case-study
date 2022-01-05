@@ -1,6 +1,8 @@
 # Essential Feed App – Image Feed Feature
 Repo used for following [iOS lead essentials](https://iosacademy.essentialdeveloper.com/p/ios-lead-essentials/) course, from [Essential Developer](https://www.essentialdeveloper.com/) - [base repo](https://github.com/essentialdevelopercom/essential-feed-case-study).
 
+[![Build Status](https://app.travis-ci.com/brenovaladao/essential-feed-case-study.svg?branch=main)](https://app.travis-ci.com/brenovaladao/essential-feed-case-study)
+
 ## BDD Specs
 
 ### Story: Customer requests to see their image feed
