@@ -125,7 +125,7 @@ class CodableFeedStoreTests: XCTestCase {
             
             sut.retrieve { retriveResult in
                 switch retriveResult {
-                case let.found(retrievedFeed, retrievedimestamp):
+                case let .found(retrievedFeed, retrievedimestamp):
                     XCTAssertEqual(retrievedFeed, feed)
                     XCTAssertEqual(retrievedimestamp, timestamp)
                     
@@ -134,6 +134,37 @@ class CodableFeedStoreTests: XCTestCase {
                 }
                 
                 exp.fulfill()
+            }
+        }
+        
+        wait(for: [exp], timeout: 1.0)
+    }
+    
+    func test_retrieve_hasNoSideEffectsOnNonEmptyCache() {
+        let sut = makeSUT()
+        let feed = uniqueImageFeed().local
+        let timestamp = Date()
+        
+        let exp = expectation(description: "Wait for cache retrieval")
+        
+        sut.insert(feed, timestamp: timestamp) { insertionError in
+            XCTAssertNil(insertionError, "Expected feed to be inserted successfully")
+            
+            sut.retrieve { firstResult in
+                sut.retrieve { secondResult in
+                    switch (firstResult, secondResult) {
+                    case let (.found(feed: firstFeed, timestamp: firstTimestamp), .found(feed: secondFeed, timestamp: secondTimestamp)):
+                        XCTAssertEqual(firstFeed, feed)
+                        XCTAssertEqual(firstTimestamp, timestamp)
+                        
+                        XCTAssertEqual(secondFeed, feed)
+                        XCTAssertEqual(secondTimestamp, timestamp)
+                    default:
+                        XCTFail("Expected retrieving twice from non empty cache to deliver same found result with feed \(feed) and \(timestamp), got \(firstResult) and \(secondResult) instead")
+                    }
+                    
+                    exp.fulfill()
+                }
             }
         }
         
