@@ -8,8 +8,7 @@
 import XCTest
 import EssentialFeed
 
-
-class CodableFeedStoreTests: XCTestCase {
+class CodableFeedStoreTests: XCTestCase, FailableFeedStoreTests {
 
     override func setUp() {
         super.setUp()
@@ -29,7 +28,7 @@ class CodableFeedStoreTests: XCTestCase {
         expect(sut, toRetrieve: .empty)
     }
     
-    func test_retrieve_hasNoSideEffectsOnEmptyCache() {
+    func test_retrieve_hasNoSideEffectOnEmptyCache() {
         let sut = makeSUT()
         
         expect(sut, toRetrieveTwice: .empty)
