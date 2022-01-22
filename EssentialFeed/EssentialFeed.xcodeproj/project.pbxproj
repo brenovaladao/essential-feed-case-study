@@ -154,16 +154,24 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		4099A273279C2020001F444B /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				4099A270279C1485001F444B /* FeedStore.xcdatamodeld */,
+				4099A26E279C135D001F444B /* CoreDataFeedStore.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
 		40AA05D9278DEFD200AB2A46 /* FeedCache */ = {
 			isa = PBXGroup;
 			children = (
+				4099A273279C2020001F444B /* Infrastructure */,
 				40AA05DA278DEFE500AB2A46 /* LocalFeedLoader.swift */,
 				40AA05DC278DF03F00AB2A46 /* FeedStore.swift */,
 				409B48AE278F53DD0050B8A3 /* LocalFeedImage.swift */,
 				4036D2D52794801800DBEC73 /* FeedCachePolicy.swift */,
 				40B76F3227961DE900A4F11A /* CodableFeedStore.swift */,
-				4099A26E279C135D001F444B /* CoreDataFeedStore.swift */,
-				4099A270279C1485001F444B /* FeedStore.xcdatamodeld */,
 			);
 			path = FeedCache;
 			sourceTree = "<group>";
