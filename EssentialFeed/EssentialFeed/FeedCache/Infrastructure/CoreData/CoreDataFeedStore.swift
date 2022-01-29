@@ -21,7 +21,7 @@ public final class CoreDataFeedStore: FeedStore {
         perform { context in
             completion(Result {
                 try ManagedCache.find(in: context).map {
-                    return CachedFeed(feed: $0.localFeed, timestamp: $0.timestamp)
+                    CachedFeed(feed: $0.localFeed, timestamp: $0.timestamp)
                 }
             })
         }
@@ -35,7 +35,6 @@ public final class CoreDataFeedStore: FeedStore {
                 managedCache.feed = ManagedFeedImage.images(from: feed, in: context)
                 
                 try context.save()
-                completion(.success(()))
             })
         }
     }
@@ -47,7 +46,6 @@ public final class CoreDataFeedStore: FeedStore {
                     .find(in: context)
                     .map(context.delete)
                     .map(context.save)
-                completion(.success(()))
             })
         }
     }
