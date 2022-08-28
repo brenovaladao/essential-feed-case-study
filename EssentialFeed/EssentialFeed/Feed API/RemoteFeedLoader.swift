@@ -16,14 +16,12 @@ public final class RemoteFeedLoader: FeedLoader {
         case invalidData
     }
     
-    public typealias Result = FeedLoader.Result
-    
     public init(url: URL, client: HTTPClient) {
         self.url = url
         self.client = client
     }
     
-    public func load(completion: @escaping (Result) -> Void) {
+    public func load(completion: @escaping (LoadFeedResult) -> Void) {
         client.get(from: url) { [weak self] result in
             guard self != nil else { return }
             
@@ -37,7 +35,7 @@ public final class RemoteFeedLoader: FeedLoader {
         }
     }
 
-    private static func map(_ data: Data, from response: HTTPURLResponse) -> Result {
+    private static func map(_ data: Data, from response: HTTPURLResponse) -> LoadFeedResult {
         do {
             let items = try FeedItemsMapper.map(data, from: response)
             return .success(items.toModels())
@@ -49,7 +47,7 @@ public final class RemoteFeedLoader: FeedLoader {
 
 private extension Array where Element == RemoteFeedItem {
     func toModels() -> [FeedImage] {
-        return map {
+        map {
             FeedImage(id: $0.id, description: $0.description, location: $0.location, url: $0.image)
         }
     }
