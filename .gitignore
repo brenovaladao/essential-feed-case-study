@@ -8,6 +8,8 @@
 ## Build generated
 build/
 DerivedData/
+Gemfile.lock
+Podfile.lock
 
 ## Various settings
 *.pbxuser
