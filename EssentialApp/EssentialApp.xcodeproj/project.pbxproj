@@ -18,8 +18,6 @@
 		40EA92AA28C3A7D200F062D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EA92A928C3A7D200F062D5 /* Assets.xcassets */; };
 		40EA92AD28C3A7D200F062D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EA92AB28C3A7D200F062D5 /* LaunchScreen.storyboard */; };
 		40EA92B828C3A7D200F062D5 /* EssentialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA92B728C3A7D200F062D5 /* EssentialAppTests.swift */; };
-		40EA92C228C3A7D200F062D5 /* EssentialAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA92C128C3A7D200F062D5 /* EssentialAppUITests.swift */; };
-		40EA92C428C3A7D200F062D5 /* EssentialAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA92C328C3A7D200F062D5 /* EssentialAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +66,6 @@
 		40EA92B328C3A7D200F062D5 /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EA92B728C3A7D200F062D5 /* EssentialAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppTests.swift; sourceTree = "<group>"; };
 		40EA92BD28C3A7D200F062D5 /* EssentialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		40EA92C128C3A7D200F062D5 /* EssentialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITests.swift; sourceTree = "<group>"; };
-		40EA92C328C3A7D200F062D5 /* EssentialAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +109,6 @@
 			children = (
 				40EA929F28C3A7D100F062D5 /* EssentialApp */,
 				40EA92B628C3A7D200F062D5 /* EssentialAppTests */,
-				40EA92C028C3A7D200F062D5 /* EssentialAppUITests */,
 				40EA929E28C3A7D100F062D5 /* Products */,
 				401A321C28C3A8F80018CCB3 /* Frameworks */,
 			);
@@ -149,15 +144,6 @@
 				40EA92B728C3A7D200F062D5 /* EssentialAppTests.swift */,
 			);
 			path = EssentialAppTests;
-			sourceTree = "<group>";
-		};
-		40EA92C028C3A7D200F062D5 /* EssentialAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				40EA92C128C3A7D200F062D5 /* EssentialAppUITests.swift */,
-				40EA92C328C3A7D200F062D5 /* EssentialAppUITestsLaunchTests.swift */,
-			);
-			path = EssentialAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,8 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40EA92C228C3A7D200F062D5 /* EssentialAppUITests.swift in Sources */,
-				40EA92C428C3A7D200F062D5 /* EssentialAppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
