@@ -5,9 +5,9 @@
 //  Created by Breno Valadão on 03/09/22.
 //
 
-struct FeedErrorViewModel {
-    let message: String?
-
+public struct FeedErrorViewModel {
+    public let message: String?
+    
     static var noError: FeedErrorViewModel {
         FeedErrorViewModel(message: nil)
     }
