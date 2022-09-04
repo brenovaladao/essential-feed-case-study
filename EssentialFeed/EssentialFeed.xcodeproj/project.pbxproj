@@ -60,6 +60,8 @@
 		40C0BF942785DD0D00D0DA10 /* EssentialFeedAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C0BF932785DD0D00D0DA10 /* EssentialFeedAPIEndToEndTests.swift */; };
 		40C0BF952785DD0D00D0DA10 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BE677027726DAA0082F985 /* EssentialFeed.framework */; };
 		40C0BF9B2785E17F00D0DA10 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084C56E277C8EC70060B46D /* XCTestCase+MemoryLeakTracking.swift */; };
+		40C9DE6F28C4CFAF00B6371F /* FeedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C9DE6E28C4CFAF00B6371F /* FeedCache.swift */; };
+		40C9DE7128C4CFBA00B6371F /* FeedImageDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C9DE7028C4CFBA00B6371F /* FeedImageDataCache.swift */; };
 		40DCB73F277B69C4002ACCED /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCB73E277B69C4002ACCED /* HTTPClient.swift */; };
 		40DCB741277B69F8002ACCED /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCB740277B69F8002ACCED /* FeedItemsMapper.swift */; };
 		40EA928B28C3A45100F062D5 /* LocalFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA928A28C3A45100F062D5 /* LocalFeedImageDataLoader.swift */; };
@@ -196,6 +198,8 @@
 		40BE678A27726E7B0082F985 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		40C0BF912785DD0D00D0DA10 /* EssentialFeedAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C0BF932785DD0D00D0DA10 /* EssentialFeedAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedAPIEndToEndTests.swift; sourceTree = "<group>"; };
+		40C9DE6E28C4CFAF00B6371F /* FeedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCache.swift; sourceTree = "<group>"; };
+		40C9DE7028C4CFBA00B6371F /* FeedImageDataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataCache.swift; sourceTree = "<group>"; };
 		40DCB73E277B69C4002ACCED /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		40DCB740277B69F8002ACCED /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 		40EA928A28C3A45100F062D5 /* LocalFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImageDataLoader.swift; sourceTree = "<group>"; };
@@ -533,6 +537,8 @@
 				40BE678827726DE00082F985 /* FeedImage.swift */,
 				4081BDE828C119DE00C8EB95 /* FeedImageDataLoader.swift */,
 				40BE678A27726E7B0082F985 /* FeedLoader.swift */,
+				40C9DE6E28C4CFAF00B6371F /* FeedCache.swift */,
+				40C9DE7028C4CFBA00B6371F /* FeedImageDataCache.swift */,
 			);
 			path = "Feed Feature";
 			sourceTree = "<group>";
@@ -930,10 +936,12 @@
 				4084C571277C99A20060B46D /* URLSessionHTTPClient.swift in Sources */,
 				40F144DA28C3A28100244003 /* FeedImageDataStore.swift in Sources */,
 				40F144C528C38F8A00244003 /* FeedPresenter.swift in Sources */,
+				40C9DE6F28C4CFAF00B6371F /* FeedCache.swift in Sources */,
 				40F144BE28C38E4F00244003 /* FeedImageViewModel.swift in Sources */,
 				40F144C928C38FE000244003 /* FeedViewModel.swift in Sources */,
 				4099A279279C20CE001F444B /* ManagedCache.swift in Sources */,
 				40F144C628C38F8A00244003 /* FeedErrorViewModel.swift in Sources */,
+				40C9DE7128C4CFBA00B6371F /* FeedImageDataCache.swift in Sources */,
 				4099A26F279C135D001F444B /* CoreDataFeedStore.swift in Sources */,
 				40EA928B28C3A45100F062D5 /* LocalFeedImageDataLoader.swift in Sources */,
 				40F144CF28C39F2200244003 /* RemoteFeedImageDataLoader.swift in Sources */,
