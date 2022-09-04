@@ -25,6 +25,7 @@
 		40C9DE6928C4CF2100B6371F /* FeedLoaderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C9DE6828C4CF2100B6371F /* FeedLoaderStub.swift */; };
 		40C9DE6B28C4CF3E00B6371F /* XCTestCase+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C9DE6A28C4CF3E00B6371F /* XCTestCase+FeedImageDataLoader.swift */; };
 		40C9DE6D28C4CF7B00B6371F /* XCTestCase+FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C9DE6C28C4CF7B00B6371F /* XCTestCase+FeedLoader.swift */; };
+		40C9DE7328C4D0C900B6371F /* DebuggingSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C9DE7228C4D0C900B6371F /* DebuggingSceneDelegate.swift */; };
 		40EA92A128C3A7D100F062D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA92A028C3A7D100F062D5 /* AppDelegate.swift */; };
 		40EA92A328C3A7D100F062D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA92A228C3A7D100F062D5 /* SceneDelegate.swift */; };
 		40EA92A528C3A7D100F062D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA92A428C3A7D100F062D5 /* ViewController.swift */; };
@@ -75,6 +76,7 @@
 		40C9DE6828C4CF2100B6371F /* FeedLoaderStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderStub.swift; sourceTree = "<group>"; };
 		40C9DE6A28C4CF3E00B6371F /* XCTestCase+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
 		40C9DE6C28C4CF7B00B6371F /* XCTestCase+FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedLoader.swift"; sourceTree = "<group>"; };
+		40C9DE7228C4D0C900B6371F /* DebuggingSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebuggingSceneDelegate.swift; sourceTree = "<group>"; };
 		40EA929D28C3A7D100F062D5 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EA92A028C3A7D100F062D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40EA92A228C3A7D100F062D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				40EA92A028C3A7D100F062D5 /* AppDelegate.swift */,
+				40C9DE7228C4D0C900B6371F /* DebuggingSceneDelegate.swift */,
 				40EA92A228C3A7D100F062D5 /* SceneDelegate.swift */,
 				40EA92A428C3A7D100F062D5 /* ViewController.swift */,
 				40EA92A628C3A7D100F062D5 /* Main.storyboard */,
@@ -284,6 +287,7 @@
 				40EA92A528C3A7D100F062D5 /* ViewController.swift in Sources */,
 				40EA92A128C3A7D100F062D5 /* AppDelegate.swift in Sources */,
 				40C9DE5F28C4CE8100B6371F /* FeedImageDataLoaderCacheDecorator.swift in Sources */,
+				40C9DE7328C4D0C900B6371F /* DebuggingSceneDelegate.swift in Sources */,
 				40EA92A328C3A7D100F062D5 /* SceneDelegate.swift in Sources */,
 				40AFF02A28C3AD4300FCE40C /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */,
 				40C9DE6128C4CE9000B6371F /* FeedLoaderCacheDecorator.swift in Sources */,
