@@ -1,8 +1,8 @@
 //
 //  FeedUIIntegrationTests+Localization.swift
-//  EssentialFeediOSTests
+//  EssentialAppTests
 //
-//  Created by Breno Valadão on 03/09/22.
+//  Created by Breno Valadão on 04/09/22.
 //
 
 import Foundation
