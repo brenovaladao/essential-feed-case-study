@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/brenovaladao/Documents/Projects/Essential Developer/Code along/essential-feed-case-study/EssentialApp/EssentialApp/CommentsUIComposer.swift">
-   </FileRef>
-   <FileRef
       location = "group:EssentialFeed/EssentialFeed.xcodeproj">
    </FileRef>
    <FileRef

@@ -16,8 +16,8 @@
 		402CFEF428CC8F7100E7DADE /* LoadResourcePresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CFEF328CC8F7100E7DADE /* LoadResourcePresentationAdapter.swift */; };
 		402CFF4D28CC99B500E7DADE /* CommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CFF4C28CC99B500E7DADE /* CommentsUIIntegrationTests.swift */; };
 		402CFF4F28CC9AB300E7DADE /* ListViewController+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CFF4E28CC9AB300E7DADE /* ListViewController+TestHelpers.swift */; };
-		402CFF5928CC9BAF00E7DADE /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CFF5828CC9BAF00E7DADE /* CommentsUIComposer.swift */; };
 		402CFF7628CCA32F00E7DADE /* NullStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CFF7528CCA32F00E7DADE /* NullStore.swift */; };
+		405026D028CCB75F00BD3F95 /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405026CF28CCB75F00BD3F95 /* CommentsUIComposer.swift */; };
 		40AFF02628C3ACAE00FCE40C /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AFF02528C3ACAE00FCE40C /* SharedTestHelpers.swift */; };
 		40AFF02828C3ACCE00FCE40C /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AFF02728C3ACCE00FCE40C /* XCTestCase+MemoryLeakTracking.swift */; };
 		40C9DE7928C4D1C200B6371F /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C9DE7828C4D1C200B6371F /* FeedUIComposer.swift */; };
@@ -74,8 +74,11 @@
 		402CFEF328CC8F7100E7DADE /* LoadResourcePresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresentationAdapter.swift; sourceTree = "<group>"; };
 		402CFF4C28CC99B500E7DADE /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
 		402CFF4E28CC9AB300E7DADE /* ListViewController+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController+TestHelpers.swift"; sourceTree = "<group>"; };
-		402CFF5828CC9BAF00E7DADE /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentsUIComposer.swift; path = "/Users/brenovaladao/Documents/Projects/Essential Developer/Code along/essential-feed-case-study/EssentialApp/EssentialApp/CommentsUIComposer.swift"; sourceTree = "<absolute>"; };
 		402CFF7528CCA32F00E7DADE /* NullStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullStore.swift; sourceTree = "<group>"; };
+		405026CF28CCB75F00BD3F95 /* CommentsUIComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
+		405026D128CCB79200BD3F95 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		405026D228CCB7CC00BD3F95 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		405026D428CCB80200BD3F95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		40AFF02528C3ACAE00FCE40C /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		40AFF02728C3ACCE00FCE40C /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		40C9DE7828C4D1C200B6371F /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
@@ -176,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				40C9DE7828C4D1C200B6371F /* FeedUIComposer.swift */,
-				402CFF5828CC9BAF00E7DADE /* CommentsUIComposer.swift */,
+				405026CF28CCB75F00BD3F95 /* CommentsUIComposer.swift */,
 				40C9DE7A28C4D1D700B6371F /* FeedViewAdapter.swift */,
 				402CFEF328CC8F7100E7DADE /* LoadResourcePresentationAdapter.swift */,
 				40C9DE7E28C4D27C00B6371F /* WeakRefVirtualProxy.swift */,
@@ -248,7 +251,7 @@
 		40EA929528C3A7D100F062D5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
+				BuildIndependentTargetsInParallel = NO;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
@@ -269,6 +272,8 @@
 			knownRegions = (
 				en,
 				Base,
+				el,
+				"pt-BR",
 			);
 			mainGroup = 40EA929428C3A7D100F062D5;
 			productRefGroup = 40EA929E28C3A7D100F062D5 /* Products */;
@@ -309,11 +314,11 @@
 				40C9DE7B28C4D1D700B6371F /* FeedViewAdapter.swift in Sources */,
 				402CFECF28CC859B00E7DADE /* CombineHelpers.swift in Sources */,
 				402CFF7628CCA32F00E7DADE /* NullStore.swift in Sources */,
+				405026D028CCB75F00BD3F95 /* CommentsUIComposer.swift in Sources */,
 				40EA92A328C3A7D100F062D5 /* SceneDelegate.swift in Sources */,
 				402CFEF428CC8F7100E7DADE /* LoadResourcePresentationAdapter.swift in Sources */,
 				40C9DE7F28C4D27C00B6371F /* WeakRefVirtualProxy.swift in Sources */,
 				40C9DE7928C4D1C200B6371F /* FeedUIComposer.swift in Sources */,
-				402CFF5928CC9BAF00E7DADE /* CommentsUIComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +361,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				40EA92AC28C3A7D200F062D5 /* Base */,
+				405026D128CCB79200BD3F95 /* el */,
+				405026D228CCB7CC00BD3F95 /* pt-BR */,
+				405026D428CCB80200BD3F95 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -367,9 +375,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -427,9 +436,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -487,8 +497,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EssentialApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = EssentialApp;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -517,8 +527,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EssentialApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = EssentialApp;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
