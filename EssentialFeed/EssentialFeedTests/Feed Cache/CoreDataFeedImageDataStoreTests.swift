@@ -78,6 +78,7 @@ class CoreDataFeedImageDataStoreTests: XCTestCase {
 
         default:
             XCTFail("Expected \(expectedResult), got \(receivedResult) instead", file: file, line: line)
+        }
     }
 
     private func insert(_ data: Data, for url: URL, into sut: CoreDataFeedStore, file: StaticString = #filePath, line: UInt = #line) {

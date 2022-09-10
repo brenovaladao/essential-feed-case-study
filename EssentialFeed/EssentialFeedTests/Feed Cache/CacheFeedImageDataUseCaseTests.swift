@@ -21,7 +21,7 @@ class CacheFeedImageDataUseCaseTests: XCTestCase {
         let url = anyURL()
         let data = anyData()
 
-        try sut.save(data, for: url)
+        try? sut.save(data, for: url)
 
         XCTAssertEqual(store.receivedMessages, [.insert(data: data, for: url)])
     }
