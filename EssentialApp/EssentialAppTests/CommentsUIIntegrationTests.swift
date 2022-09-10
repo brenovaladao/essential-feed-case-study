@@ -148,7 +148,8 @@ class CommentsUIIntegrationTests: XCTestCase {
                 PassthroughSubject<[ImageComment], Error>()
                     .handleEvents(receiveCancel: {
                         cancelCallCount += 1
-                    }).eraseToAnyPublisher()
+                    })
+                    .eraseToAnyPublisher()
             })
 
             sut?.loadViewIfNeeded()
