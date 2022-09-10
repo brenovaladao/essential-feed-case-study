@@ -26,7 +26,7 @@ func assertLocalizedKeyAndValuesExist(in presentationBundle: Bundle, _ table: St
 
 private typealias LocalizedBundle = (bundle: Bundle, localization: String)
 
-private func allLocalizationBundles(in bundle: Bundle, file: StaticString = #file, line: UInt = #line) -> [LocalizedBundle] {
+private func allLocalizationBundles(in bundle: Bundle, file: StaticString = #filePath, line: UInt = #line) -> [LocalizedBundle] {
     return bundle.localizations.compactMap { localization in
         guard
             let path = bundle.path(forResource: localization, ofType: "lproj"),
