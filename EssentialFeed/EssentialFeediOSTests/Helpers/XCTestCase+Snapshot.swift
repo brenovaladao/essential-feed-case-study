@@ -57,8 +57,6 @@ extension XCTestCase {
             XCTFail("Failed to generate PNG data representation from snapshot", file: file, line: line)
             return nil
         }
-
         return data
     }
-
 }
